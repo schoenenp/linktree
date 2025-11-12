@@ -139,7 +139,7 @@ export default function HomePage() {
 					>
 						<Link
 							className="group relative flex w-full flex-col items-center justify-center overflow-hidden rounded-4xl border border-pirrot-red-500/40 bg-linear-to-br from-pirrot-red-800/95 via-pirrot-red-700/90 to-pirrot-red-600/95 p-10 font-bold text-pirrot-red-50 uppercase shadow-2xl backdrop-blur-md transition-all duration-700 hover:border-pirrot-red-300/60 hover:shadow-3xl hover:shadow-pirrot-red-400/20"
-							href="https://www.beschriftungsservice.de"
+							href="http://www.beschriftungsservice.de"
 						>
 							{/* Animated background gradient */}
 							<div className="absolute inset-0 bg-liner-to-br from-pirrot-red-500/10 via-transparent to-pirrot-red-700/15 opacity-0 transition-opacity duration-700 group-hover:opacity-100"></div>
