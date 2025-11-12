@@ -31,9 +31,9 @@ export default function HomePage() {
 
 				{/* Logo */}
 				<motion.div
-					animate={{ scale: 1, opacity: 1 }}
+					animate={{ scale: 1 }}
 					className="relative z-20 mb-8"
-					initial={{ scale: 0.8, opacity: 0 }}
+					initial={{ scale: 0.8 }}
 					transition={{
 						delay: 0.1,
 						duration: 0.8,
@@ -43,8 +43,17 @@ export default function HomePage() {
 					}}
 				>
 					<div className="relative flex items-center justify-center">
-						<div className="absolute inset-0 scale-150 rounded-full bg-linear-to-r from-pirrot-blue-500/20 to-pirrot-red-500/20 blur-xl"></div>
-						<div className="relative animate-float rounded-full border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-sm">
+						<motion.div
+							animate={{ opacity: 0.2 }}
+							className="absolute inset-0 scale-150 rounded-full bg-linear-to-r from-pirrot-blue-500/20 to-pirrot-red-500/20 blur-xl"
+							initial={{ opacity: 0 }}
+							transition={{
+								delay: 0.1,
+								duration: 0.8,
+								ease: "easeOut",
+							}}
+						></motion.div>
+						<div className="relative animate-float rounded-full border border-white/20 p-4 shadow-2xl">
 							<Image
 								alt="Pirrot Logo"
 								className="h-16 w-16 drop-shadow-lg"
@@ -73,7 +82,7 @@ export default function HomePage() {
 					<div className="absolute inset-0 scale-110 bg-linear-to-r from-pirrot-blue-500/15 to-pirrot-red-500/15 opacity-60 blur-2xl"></div>
 				</motion.h1>
 
-				<motion.p
+				<motion.div
 					animate={{ opacity: 1 }}
 					className="relative max-w-3xl text-center font-medium text-pirrot-blue-200/90 text-xl leading-relaxed tracking-wide"
 					initial={{ opacity: 0 }}
@@ -84,7 +93,7 @@ export default function HomePage() {
 						du brauchst. <br /> Wir kümmern uns um den Rest!
 					</span>
 					<div className="absolute inset-0 rounded-xl bg-linear-to-r from-pirrot-blue-500/8 to-pirrot-red-500/8 blur-md"></div>
-				</motion.p>
+				</motion.div>
 
 				<motion.div
 					animate={{ opacity: 1, y: 0 }}
