@@ -3,8 +3,10 @@
 	"version": "0.1.0",
 	"private": true,
 	"type": "module",
+
 	"scripts": {
 		"build": "next build",
+		"postbuild": "node postbuild.cjs",
 		"check": "biome check .",
 		"check:unsafe": "biome check --write --unsafe .",
 		"check:write": "biome check --write .",
